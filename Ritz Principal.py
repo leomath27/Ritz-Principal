@@ -1,0 +1,86 @@
+print('hi...im gonna help you find the ans to ritz principal equation in chemistry')
+print('what do you want to find the answer for: ')
+print('1.only hydrogen spectrum')
+print('2.any other spectrum')
+i =int(input('PLEASE PICK 1. OR 2.'))
+if(i==1):
+	a =input('enter the first energy level in a hydrogen spectrum(n1) : ')
+	e=int(a)
+	c=input('enter the second energy level(n2) :')
+	f=int(c)
+	R=109677
+	print('Since the formula is:')
+	print('nu bar=Rydburgs constant*((1/n1^2)-(1/n2^2)')
+	print('=109677*((1/', a , '^2)*(1/' , c , '^2))')
+	print('nu bar=Rydburgs constant*((1/n1^2)-(1/n2^2)')
+	print('=109677*((1/', a , '^2)*(1/' , c , '^2))')
+	NN1=(1/float(e))*(1/float(e))
+	NN2=(1/float(f))*(1/float(f))
+	NN=NN1-NN2
+	print('=109677*' , NN)
+	mewdash=R*NN
+	formatmewdah= format( mewdash , '.6f')
+	mewdash=R*NN
+	formatmewdah= format( mewdash , '.6f')
+	wavelength=1/mewdash
+	formatwavelength= format( wavelength , '6f')
+	print('nu bar= ' ,formatmewdah )
+	print('wavelength= inverse of nu bar therefore')
+	print('wavelength=1/nu bar')
+	print('wavelength=1/' , formatmewdah)
+	print('wavelength= ' ,formatwavelength,'cm')
+	print('do you still want to continue to find the ritz principal for a spectum of another element (Y or N)')
+	j= input('type Y for yes and N for no:')
+	if(j=='Y' or j=='y'):
+		z=input('type the element that you want: ')
+		b =input('enter the first energy level(n1): ')
+		g=int(b)
+		d=input('enter the second energy level(n2) : ')
+		h=int(d)
+		Z =int(input('last but not the least enter the atomic no. (Z): '))
+		print('Since the equation is:')
+		print('nu bar for given element=Rydburgs constant*Z*Z((1/n1^2)-(1/n2^2)')
+		RR=109677
+		NNN1=(1/float(
+		g))*(1/float(g))
+		NNN2=(1/float(h))*(1/float(h))
+		NNN=NNN1-NNN2
+		print('=109677*' , Z , '*', Z , '((1/' , b , '^2)*(1/' , d , '^2))')
+		print('=109677*' , (Z*Z) , '*', NNN)
+		print('=109677*' , (Z*Z*NNN))
+		mewdas=(RR*NNN)*(Z*Z)
+		formatmewda= format( mewdash , '.6f')
+		wavelengths=1/mewdash
+		formatwavelengt= format( wavelength , '6f')
+		print('nu dash= ' ,formatmewda )
+		print('since wavelength of the spectral line of ' , z, '= inverse of its nu dash')
+		print('wavelength=1/nu dash')
+		print('wavelength=1/' , formatmewdah)
+		print('wavelength= ' ,formatwavelengt,'cm')
+		
+else:
+	z= input('type the element that you want: ')
+	b = input('enter the first energy level(n1) : ')
+	g=int(b)
+	d=input('enter the second energy level (n2) : ')
+	h=int(d)
+	Z =input('last but not the least enter the atomic no.(Z) :  ')
+	q=int(Z)
+	print('Since the equation is:')
+	print('nu bar for given element=Rydburgs constant*Z*Z((1/n1^2)-(1/n2^2)')
+	RR=109677
+	NNN1=(1/float(g))*(1/float(g))
+	NNN2=(1/float(h))*(1/float(h))
+	NNN=NNN1-NNN2
+	print('=109677*' , Z , '*', Z , '((1/' , b , '^2)*(1/' , d , '^2))')
+	print('=109677*' , (q*q) , '*', NNN)
+	print('=109677*' , (q*q*NNN))
+	mewdas=(RR*NNN)*(q*q)
+	formatmewda= format( mewdas , '.6f')
+	wavelengths=1/mewdas
+	formatwavelengt= format( wavelengths , '6f')
+	print('mew dash= ' ,formatmewda )
+	print('since wavelength of the spectral line of ' , z, '= inverse of its nu dash')
+	print('wavelength=1/nu dash')
+	print('wavelength=1/', formatmewda)
+	print('wavelength= ' ,formatwavelengt,'cm')
